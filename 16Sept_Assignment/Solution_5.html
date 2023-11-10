@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up and Sign In Form Solution_5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .error {
+            color: red;
+            margin-top: -10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="signupForm">
+        <h2>Sign Up</h2>
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" required minlength="3">
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" required minlength="3">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required minlength="3">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required minlength="3">
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required minlength="3">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" required min="0" max="150">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+        </select>
+        <label>
+            <input type="checkbox" id="terms" name="terms" required>
+            I agree to the terms and conditions
+        </label>
+        <button type="button" onclick="validateSignup()">Sign Up</button>
+        <p id="signupError" class="error"></p>
+    </form>
+
+    <form id="loginForm">
+        <h2>Sign In</h2>
+        <label for="loginEmail">Email:</label>
+        <input type="email" id="loginEmail" name="loginEmail" required minlength="3">
+        <label for="loginPassword">Password:</label>
+        <input type="password" id="loginPassword" name="loginPassword" required minlength="3">
+        <button type="button" onclick="validateLogin()">Sign In</button>
+        <p id="loginError" class="error"></p>
+    </form>
+
+    <script>
+        function validateSignup() {
+            var firstName = document.getElementById('firstName').value;
+            var lastName = document.getElementById('lastName').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+            var confirmPassword = document.getElementById('confirmPassword').value;
+            var age = document.getElementById('age').value;
+            var gender = document.getElementById('gender').value;
+            var terms = document.getElementById('terms').checked;
+            var errorElement = document.getElementById('signupError');
+
+            // Simple validation
+            if (firstName.length < 3 || lastName.length < 3 || email.length < 3 || password.length < 3) {
+                errorElement.textContent = 'Fields cannot be less than 3 characters.';
+                return;
+            }
+
+            if (password !== confirmPassword) {
+                errorElement.textContent = 'Passwords do not match.';
+                return;
+            }
+
+            if (age < 0 || age > 150) {
+                errorElement.textContent = 'Age must be between 0 and 150.';
+                return;
+            }
+
+            if (!terms) {
+                errorElement.textContent = 'Please agree to the terms and conditions.';
+                return;
+            }
+
+            // Clear error message
+            errorElement.textContent = '';
+
+            // Proceed with signup logic (not implemented in this example)
+        }
+
+        function validateLogin() {
+            var email = document.getElementById('loginEmail').value;
+            var password = document.getElementById('loginPassword').value;
+            var errorElement = document.getElementById('loginError');
+
+            // Simple validation
+            if (email.length < 3 || password.length < 3) {
+                errorElement.textContent = 'Fields cannot be less than 3 characters.';
+                return;
+            }
+
+            // Clear error message
+            errorElement.textContent = '';
+
+            // Proceed with login logic (not implemented in this example)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+Comments in HTML are used for:
+
+Documentation: To add explanations and notes within the code for developers.
+Debugging: Temporarily disable or isolate code for debugging.
+Collaboration: Explain code logic to team members.
+Reminders: Note future improvements or changes.
+To create a comment in an HTML document, you use the <!-- and --> delimiters to enclose the comment text. Anything between these delimiters is treated as a comment and will not be rendered by the web browser. Here's an example of how to use comments in an HTML document:
