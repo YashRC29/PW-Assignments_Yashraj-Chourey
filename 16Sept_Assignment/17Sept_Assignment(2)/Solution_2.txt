@@ -1,0 +1,52 @@
+This is a basic example of an HTML document with appropriate `<title>` and `<meta>` tags for SEO optimization. In this 
+example, I've used a fictional website about healthy recipes.
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags for SEO -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Page Title -->
+    <title>Healthy Recipes Hub - Delicious and Nutritious Meal Ideas</title>
+    
+    <!-- Meta Description -->
+    <meta name="description" content="Discover a variety of healthy recipes for every meal. Our hub provides delicious and nutritious 
+    meal ideas to support your well-being.">
+    
+    <!-- Additional meta tags for SEO -->
+    <meta name="keywords" content="healthy recipes, nutritious meals, clean eating, cooking, wellness">
+    <meta name="author" content="Your Name">
+
+    <!-- Favicon (replace with your own favicon.ico) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Add more meta tags as needed -->
+
+    <!-- CSS files, scripts, or other head elements can be included here -->
+</head>
+
+<body>
+    <!-- The content of your web page goes here -->
+
+    <!-- Scripts and other body elements can be included here -->
+</body>
+
+</html>
+```
+
+In this example:
+
+- The `<title>` tag provides a descriptive and concise title for the page, incorporating the main keywords related to the content of 
+the website.
+  
+- The `<meta>` tag with the name attribute "description" contains a concise and informative meta description that summarizes the 
+content of the page. This is what search engines often display in the search results.
+
+- Additional meta tags, such as "keywords" and "author," can be included based on your specific needs.
+
+Remember to replace the placeholder values with your actual content and adjust the meta tags based on the specific focus of your 
+website. Additionally, including relevant and descriptive content within the body of your HTML page is equally important for SEO.
