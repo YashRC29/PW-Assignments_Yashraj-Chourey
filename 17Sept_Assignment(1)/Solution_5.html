@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features Showcase Solution_5</title>
+</head>
+<body>
+
+    <header>
+        <h1>Exploring HTML5 Features</h1>
+    </header>
+
+    <section id="semantic-tags">
+        <h2>Semantic Tags</h2>
+        <p>HTML5 introduces semantic tags that provide a clearer structure to your content. These include tags like &lt;header&gt;, &lt;nav&gt;, &lt;article&gt;, &lt;section&gt;, and more.</p>
+    </section>
+
+    <section id="audio-video">
+        <h2>Audio and Video Support</h2>
+        <p>HTML5 comes with native support for embedding audio and video content using the &lt;audio&gt; and &lt;video&gt; elements. This eliminates the need for third-party plugins and enhances the multimedia experience on the web.</p>
+        
+        <video width="400" controls>
+            <source src="sample-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section id="canvas-element">
+        <h2>Canvas Element</h2>
+        <p>The &lt;canvas&gt; element in HTML5 allows dynamic rendering of graphics, charts, and other visual elements using JavaScript. It provides a powerful graphics API for creating interactive and visually appealing web applications.</p>
+
+        <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
+
+        <script>
+            // Example: Drawing a simple rectangle on the canvas
+            var canvas = document.getElementById("myCanvas");
+            var context = canvas.getContext("2d");
+            context.fillStyle = "#3498db";
+            context.fillRect(50, 25, 200, 100);
+        </script>
+    </section>
+
+    <p>
+        In this example: <br>
+
+- Semantic tags like `header`, `section`, and `footer` are used for structuring content. <br>
+- The section with the id "semantic-tags" highlights the semantic tags feature. <br>
+- The section with the id "audio-video" showcases the audio/video support feature, including an example video. <br>
+- The section with the id "canvas-element" explains the canvas element feature and includes a simple JavaScript script to draw a rectangle on the canvas.
+    </p>
+
+    <footer>
+        <p>&copy; 2023 HTML5 Features Showcase</p>
+    </footer>
+
+</body>
+</html>
