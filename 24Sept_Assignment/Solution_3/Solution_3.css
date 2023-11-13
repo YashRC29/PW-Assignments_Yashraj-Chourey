@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #497ad0;
+    overflow: hidden;
+}
+
+.nav-link {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    text-decoration: underline;
+    
+}
+
+#one {
+
+    border: 2px black;
+    border-style:dashed
+}
+
+#two {
+
+    border: 2px black;
+    border-style: dotted;
+
+}
+
+#three {
+
+    border: 2px black;
+    border-style: double;
+}
+
+#four {
+
+    border: 2px black;
+    border-style: groove;
+}
+
+#five {
+
+    border: 2px black;
+    border-style: inset;
+}
+
+.nav-link:hover {
+    background-color: #ddd;
+    color: black;
+}

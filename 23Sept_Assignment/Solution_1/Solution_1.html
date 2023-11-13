@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">              
+    <title>Solution_1</title>
+    <link rel="stylesheet" href="./Solution_1.css">
+
+<style>
+.two {
+    background-color: aqua;
+}
+#unique {
+    background-color: red;
+}
+</style>
+
+</head>
+
+
+<body>
+    <!-- There are 3 ways to add CSS as follows -->
+
+<!-- 1>This is Inline CSS -->
+    <div class="one" style="color: black; background-color: red;"> 
+        <h1>This is heading no 1</h1>
+        <h2>This is heading no 2</h2>
+    
+    </div>
+
+<!-- 2>This is Internal CSS -->
+    <div class="two"> 
+        <h3>This is heading no 3</h3>
+        <h4>This is Heading no 4</h4>
+        
+    </div>
+
+<!-- 3>This is External CSS -->
+    <div class="three">
+        <h5>This is Heading no 5</h5>
+        <h6>This is Heading no 6</h6>
+    </div>
+
+<!-- How Inline, Internal, and External CSS will work on same element -->
+<div id="unique" style="background-color: blueviolet;">
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate magnam quam cumque dolorum consequatur, at quidem, 
+    corporis commodi odit natus, cupiditate autem repellat libero ipsum reiciendis rerum fugit corrupti? Placeat nulla atque 
+    similique necessitatibus assumenda modi, dolor natus suscipit minima voluptatum voluptas officiis quas fugiat recusandae 
+    cum, optio veniam doloribus!</p>
+
+</div>
+
+<!-- As you can see I've applied CSS on id=unique via Inline, Internal, and External CSS but Only effect of Inline CSS is actually 
+    visible because if you apply Different properties on the same element brower will render only on the basis of priority here 
+    priority of CSS is like this - 
+    Inline CSS> Internal CSS> External CSS -->
+
+</body>
+</html>
